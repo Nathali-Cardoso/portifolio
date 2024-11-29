@@ -1,14 +1,24 @@
 @charset "UTF-8";
 
-* {
-    background-color: #000000;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    background-color: #313131;
 }
 
-
 :root {
+    --cinza: #313131;
     --branco: #FFFFFF;
     --amarelo: #F9B700;
     --verde: #00B281;
     --preto: #000000;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+}
+
+h1 {
+    padding: 50px 0px;
 }
