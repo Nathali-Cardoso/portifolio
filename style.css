@@ -5,13 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:wght@300&family=Quicksand:wght@300&family=Rajdhani:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    background-color: var(--amarelo);
+    background-color: var(--cinza);
     margin: 0px;
 
 }
 
 :root {
-    --cinza: #313131;
+    --cinza: #3b3b3b;
     --branco: #FFFFFF;
     --amarelo: #F9B700;
     --verde: #00B281;
@@ -55,5 +55,23 @@ p {
     text-align: center;
     padding: 20px;
     font-size: 2.5vh;
+}
 
+.projetos {
+    width: 50vh;
+    background-color: #b2a600;
+
+}
+
+.projetos > a {
+    list-style-type: '\2714\00A0\00A0';
+    background-color: #00B281;
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    
 }
