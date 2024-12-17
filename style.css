@@ -5,73 +5,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Montserrat:wght@300&family=Quicksand:wght@300&family=Rajdhani:wght@300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    background-color: var(--cinza);
+    background-color: gray;
+    font-family: Montserrat;
     margin: 0px;
-
-}
-
-:root {
-    --cinza: #3b3b3b;
-    --branco: #FFFFFF;
-    --amarelo: #F9B700;
-    --verde: #00B281;
-    --preto: #000000;
-}
-
-body {
-    height: 100vh;
-    width: 100vh;
 }
 
 h1 {
-    padding: 15px ;
-    margin: 10vh 0vh 0vh 20vh;
+    margin-top: 10vh;
     font-size: 10vh;
-    text-align: left;
-    font-family: Montserrat;
-}
-
- .links {
-    padding: 20px;
     text-align: center;
 }
 
-.links > a {
-    background-color: var(--cinza);
-    color: var(--branco);
-    font-family: Montserrat;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.5s;
-    text-align: left;
-}
-
-p {
-    background-color: rgba(0, 0, 0, 0.397);
-    color: var(--branco);
-    font-family: Montserrat;
-    text-align: center;
-    padding: 20px;
+section > p {
+    background-color: rgba(0, 0, 0, 0.651);
+    color: whitesmoke;
+    padding: 15px;
     font-size: 2.5vh;
+    margin: 0em 5em  ;
+    text-align: center;
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.425);
+    color: whitesmoke;
+    margin-top: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .projetos {
-    width: 50vh;
-    background-color: #b2a600;
-
+    background-color: rgba(0, 0, 0, 0.425);
 }
 
-.projetos > a {
-    list-style-type: '\2714\00A0\00A0';
-    background-color: #00B281;
-    
-}
-
-
-
-a {
+a:hover {
     text-decoration: none;
     
+    
 }
+
