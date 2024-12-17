@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap');
+
+nav {
+  text-align: right;
+  margin: 20px;
+}
+
+
+nav > a {
+  background-color: black;
+  color: #e5e5e5;
+  padding: 10px;
+  font-family: Roboto, serif ;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+nav > a:hover {
+  
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../imagens/fundo.jpg');
+   
+}
+
+main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Nunito", serif;
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .main > div > a {
+    background-color: #e5e5e5;
+  }
+
+  .perfil {
+    width: 150px; 
+    height: 200px; 
+    border-radius: 50%; 
+    border: 5px solid rgba(255, 255, 255, 0.226);
+    object-fit: cover;
+  }
+
+  .home > p {
+    font-size: 2rem;
+    font-family: Roboto, serif;
+  }
+
+  .social {
+    text-align: center;
+    margin-top: 5vw;
+  }
+
+  .social img {
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid white;
+  }
+
+ 

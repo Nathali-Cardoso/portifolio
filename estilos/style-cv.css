@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&family=Roboto&display=swap');
+
+
+body {
+    background-image: url('../imagens/fundo.jpg');
+    font-family: Roboto, serif;
+}
+
+nav {
+    text-align: right;
+    margin: 20px;
+}
+
+nav > a {
+    background-color: black;
+    color: #e5e5e5;
+    padding: 10px;
+    font-family: Roboto, serif ;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+div > img{
+    width: 60%;
+    height: auto;
+}
+
+.curriculo {
+    text-align: center;
+}
