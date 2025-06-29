@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nathali Cardoso | Suporte Técnico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Nathali C.</div>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#" onclick="openAbout()">Sobre Mim</a>
+      <a href="Nathali Cardoso – curriculo.pdf" target="_blank">Currículo</a>
+      <div class="dropdown" id="contactDropdown">
+        <a href="#" onclick="toggleContactDropdown(event)">Contato &#x25BC;</a>
+        <div class="dropdown-content" id="contactDropdownContent">
+          <a href="mailto:nathalicardoso998@outlook.com">Email</a>
+          <a href="https://github.com/nathali-cardoso" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/nathali-cardoso" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Projetos em Destaque</h1>
+    <p>"Não é só sobre TI. É sobre transformar dificuldade em solução."</p>
+  </section>
+
+  <section class="projects">
+    <div class="project-card">
+      <h3><a href="https://nathali-cardoso.github.io/meu-jogo-fecaf/" target="_blank">Meu Jogo Fecaf</a></h3>
+      <p>Jogo de plataforma 2D desenvolvido para prática e aprendizado.</p>
+      <a href="https://nathali-cardoso.github.io/meu-jogo-fecaf/" target="_blank" class="btn">Ver Projeto</a>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://nathali-cardoso.github.io/iot-pipeline-de-dados/" target="_blank">IoT Pipeline de Dados</a></h3>
+      <p>Painel para monitoramento e análise de dados IoT em tempo real.</p>
+      <a href="https://nathali-cardoso.github.io/iot-pipeline-de-dados/" target="_blank" class="btn">Ver Projeto</a>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://nathali-cardoso.github.io/projeto-login/" target="_blank">Projeto Login</a></h3>
+      <p>Sistema de autenticação e login para aplicações web.</p>
+      <a href="https://nathali-cardoso.github.io/projeto-login/" target="_blank" class="btn">Ver Projeto</a>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://nathali-cardoso.github.io/projeto-android/" target="_blank">Projeto Android</a></h3>
+      <p>App Android desenvolvido para prática de suporte técnico e manutenção.</p>
+      <a href="https://nathali-cardoso.github.io/projeto-android/" target="_blank" class="btn">Ver Projeto</a>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://nathali-cardoso.github.io/projeto-cordel/" target="_blank">Projeto Cordel</a></h3>
+      <p>Projeto web focado em apresentação e leitura de cordel digital.</p>
+      <a href="https://nathali-cardoso.github.io/projeto-cordel/" target="_blank" class="btn">Ver Projeto</a>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://nathali-cardoso.github.io/projeto-social/" target="_blank">Projeto Social</a></h3>
+      <p>Plataforma para conectar pessoas em ações sociais.</p>
+      <a href="https://nathali-cardoso.github.io/projeto-social/" target="_blank" class="btn">Ver Projeto</a>
+    </div>
+  </section>
+
+  <div class="about-modal" id="aboutModal">
+    <div class="about-content" id="aboutContent">
+      <button class="close-btn" onclick="closeAbout()">&times;</button>
+      <!-- Conteúdo do 'Sobre Mim' será carregado aqui via JS -->
+    </div>
+  </div>
+
+  <script>
+    function openAbout() {
+      document.getElementById('aboutModal').style.display = 'block';
+      // Carrega conteúdo externo
+      fetch('content/sobre.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('aboutContent').innerHTML = '<button class="close-btn" onclick="closeAbout()">&times;</button>' + html;
+        });
+    }
+    function closeAbout() {
+      document.getElementById('aboutModal').style.display = 'none';
+    }
+
+    function toggleContactDropdown(event) {
+      event.preventDefault();
+      const dropdown = document.getElementById('contactDropdown');
+      dropdown.classList.toggle('show');
+    }
+
+    window.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('contactDropdown');
+      const target = event.target;
+      if (!dropdown.contains(target)) {
+        dropdown.classList.remove('show');
+      }
+    });
+  </script>
+</body>
+</html>
